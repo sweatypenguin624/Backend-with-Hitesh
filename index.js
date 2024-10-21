@@ -14,6 +14,16 @@ app.get('/', (req, res) => {
 app.get('/hello',(req,res) =>{
     res.send("Hello Abhay! this is my hello page")
 })
+app.get('/bye',(req,res) =>{
+  res.send("Hello Abhay! this is my bye bye  page")
+})
+
+app.get('/wyd',(req,res) =>{
+  res.send("Hello Abhay! or fir? kya plans aaj?")
+})
+app.get('/hi',(req,res) =>{
+  res.send("Hello Abhay! keep calm")
+})
 
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
